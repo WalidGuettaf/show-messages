@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+    padding: 50px 100px;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.title::after{
+    content: '';
+    width: 80px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: orange;
+    display: block;
+margin: 5px auto;}
+#comments{
+    display: flex;flex-direction: column; padding: 80px 100px;gap: 25px;
+}
+#comments .comment-card{
+    border: 1px solid black;
+    padding: 25px 40px;
+    border-radius: 40px;
+}
+.info{
+    font-size: 1.5rem; 
+    font-weight: 700;
+}
+.info .message {
+    font-size: 1.3rem;
+}
+.info .message ,.info .user{
+font-weight: normal;
+}
+@media screen and (max-width : 600px ) {
+    body{
+        padding: 50px 0;
+    }
+    #comments{
+        display: flex;flex-direction: column; padding: 80px 5px;gap: 25px;
+    }
+}
