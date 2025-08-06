@@ -1,5 +1,5 @@
 const messages=document.querySelector("#comments")
-const url="https://cors-anywhere.herokuapp.com/https://theccomments.onrender.com"
+const url="https://theccomments.onrender.com"
 function getMessages(){
     axios.get(`${url}/comments`)
     .then((res)=>{
