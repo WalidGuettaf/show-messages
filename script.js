@@ -15,5 +15,11 @@ function getMessages(){
             `
         }
     })
+       .catch(()=>{
+        messages.innerHTML=`
+            <div class="comment-card">Whooops !!!!</div>
+         `
+        
+    })
 }
 getMessages()
